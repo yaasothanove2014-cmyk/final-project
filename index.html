@@ -3,97 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        
-        section {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.5rem;
-        }
-        
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Bocchi The Rock! & Pizza Game - Fan Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Final Project</h1>
-        <p>A responsive web application</p>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">🎸 Bocchi The Rock!</h1>
+            <p class="site-subtitle">Where lonely guitarists meet legendary pizza</p>
+        </div>
+        <div class="header-decoration">
+            <div class="decoration-circle"></div>
+            <div class="decoration-circle"></div>
+        </div>
     </header>
-    
-    <main>
-        <section>
-            <h2>About This Project</h2>
-            <p>This is the main landing page for the final project. Edit this content to add your project details and information.</p>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#characters" class="nav-link">Characters</a></li>
+            <li><a href="#music" class="nav-link">Music</a></li>
+            <li><a href="#pizza" class="nav-link">🍕 Pizza</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome to the Band!</h2>
+                <p class="hero-text">Follow Bocchi's journey as she overcomes her anxiety and rocks the stage!</p>
+                <button class="cta-button">Explore More</button>
+            </div>
+            <div class="hero-visual">
+                <div class="guitar-icon">🎸</div>
+            </div>
         </section>
-        
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>Clean and modern design</li>
-                <li>Responsive layout</li>
-                <li>Easy to customize</li>
-            </ul>
+
+        <!-- Characters Section -->
+        <section id="characters" class="characters-section">
+            <h2 class="section-title">Meet The Band</h2>
+            <div class="characters-grid">
+                <article class="character-card">
+                    <div class="character-image bocchi-bg">
+                        <span class="character-emoji">🎸</span>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Bocchi Gotoh</h3>
+                        <p class="character-role">Guitar • Lead Vocalist</p>
+                        <p class="character-desc">An extremely introverted guitarist who hides in bushes. Dreams of playing in a band!</p>
+                    </div>
+                </article>
+
+                <article class="character-card">
+                    <div class="character-image ryou-bg">
+                        <span class="character-emoji">🥁</span>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Ryou Yamada</h3>
+                        <p class="character-role">Drummer</p>
+                        <p class="character-desc">Cool and mysterious, but has the heart of a dreamer drummer.</p>
+                    </div>
+                </article>
+
+                <article class="character-card">
+                    <div class="character-image kita-bg">
+                        <span class="character-emoji">🎤</span>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Kita Ikuyo</h3>
+                        <p class="character-role">Vocalist • Keyboard</p>
+                        <p class="character-desc">Energetic and supportive, the glue that holds the band together.</p>
+                    </div>
+                </article>
+
+                <article class="character-card">
+                    <div class="character-image hitori-bg">
+                        <span class="character-emoji">🎵</span>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Hitori Gotoh</h3>
+                        <p class="character-role">Supporting Cast</p>
+                        <p class="character-desc">Bocchi's twin? Journey buddy with mysterious charm.</p>
+                    </div>
+                </article>
+            </div>
         </section>
-        
-        <section>
-            <h2>Getting Started</h2>
-            <p>Add your content and customize the styling to match your project needs.</p>
+
+        <!-- Music Section -->
+        <section id="music" class="music-section">
+            <h2 class="section-title">Playlist Vibes</h2>
+            <div class="music-container">
+                <article class="music-card">
+                    <div class="music-icon">🎵</div>
+                    <h3>Opening Theme</h3>
+                    <p>Perfectly crafted anime opening that sets the stage for Bocchi's adventure.</p>
+                    <div class="music-bar">
+                        <div class="music-progress"></div>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-icon">🎼</div>
+                    <h3>Band Performances</h3>
+                    <p>Live performances that showcase the band's growth and chemistry.</p>
+                    <div class="music-bar">
+                        <div class="music-progress"></div>
+                    </div>
+                </article>
+
+                <article class="music-card">
+                    <div class="music-icon">🎧</div>
+                    <h3>Character Themes</h3>
+                    <p>Unique musical themes for each character in the story.</p>
+                    <div class="music-bar">
+                        <div class="music-progress"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Pizza Guy Section -->
+        <section id="pizza" class="pizza-section">
+            <h2 class="section-title">🍕 Pizza Game Beta Crossover</h2>
+            <article class="pizza-feature">
+                <div class="pizza-content">
+                    <h3>The Legendary Pizza Guy</h3>
+                    <p>When Bocchi meets the iconic Pizza Guy from Pizza Game Beta, culinary chaos ensues! This unexpected crossover brings together music and mozzarella in the most wholesome way possible.</p>
+                    <div class="pizza-details">
+                        <span class="detail-tag">Comedy Gold</span>
+                        <span class="detail-tag">Unexpected Collab</span>
+                        <span class="detail-tag">Pure Entertainment</span>
+                    </div>
+                </div>
+                <div class="pizza-visual">
+                    <div class="pizza-slice">🍕</div>
+                    <div class="pizza-decorations">
+                        <div class="topping"></div>
+                        <div class="topping"></div>
+                        <div class="topping"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Visual Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder one">🎸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder two">🎤</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder three">🍕</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder four">🎵</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder five">🥁</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder six">✨</div>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Final Project. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About This Site</h4>
+                <p>A fan-made celebration of Bocchi The Rock! and Pizza Game Beta. Created with love and too much coffee.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <p>🎸 Rock on! 🍕 Stay cheesy!</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bocchi & Pizza Fan Universe | Not affiliated with original creators</p>
+        </div>
     </footer>
 </body>
 </html>
