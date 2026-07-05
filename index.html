@@ -1,201 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bocchi The Rock! & Pizza Game - Fan Site</title>
-    <link rel="stylesheet" href="style.css">
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#fef7ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#ebdcff",
+                        "outline": "#7d7579",
+                        "surface": "#fef7ff",
+                        "tertiary-fixed-dim": "#bcc9c6",
+                        "tertiary": "#55615f",
+                        "surface-container": "#f4eaff",
+                        "surface-container-high": "#f0e3ff",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f9f0ff",
+                        "on-tertiary-fixed-variant": "#3d4947",
+                        "tertiary-container": "#e2efec",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#766670",
+                        "inverse-primary": "#d5c1cd",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#cfc4c9",
+                        "tertiary-fixed": "#d8e5e2",
+                        "on-primary-fixed-variant": "#51434c",
+                        "on-surface": "#260059",
+                        "surface-bright": "#fef7ff",
+                        "surface-dim": "#e4d2ff",
+                        "on-error-container": "#93000a",
+                        "secondary": "#665f3d",
+                        "on-secondary-container": "#6a6341",
+                        "on-tertiary-container": "#616d6b",
+                        "inverse-surface": "#3f0689",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#695a64",
+                        "secondary-fixed-dim": "#d1c79d",
+                        "primary-container": "#fce7f3",
+                        "on-surface-variant": "#4c4549",
+                        "primary-fixed-dim": "#d5c1cd",
+                        "surface-container-highest": "#ebdcff",
+                        "secondary-container": "#eae0b5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#4d4727",
+                        "on-secondary-fixed": "#201c02",
+                        "on-background": "#260059",
+                        "primary-fixed": "#f1dde9",
+                        "on-primary-fixed": "#231820",
+                        "on-tertiary-fixed": "#121e1c",
+                        "secondary-fixed": "#ede3b8",
+                        "primary": "#695a64",
+                        "inverse-on-surface": "#f7edff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "container-max-width": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-md": ["Syne"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-sm": ["13px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .sticker-shadow {
+            box-shadow: 0 4px 20px -2px rgba(105, 90, 100, 0.1);
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 30px -10px rgba(105, 90, 100, 0.15);
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <div class="header-content">
-            <h1 class="site-title">🎸 Bocchi The Rock!</h1>
-            <p class="site-subtitle">Where lonely guitarists meet legendary pizza</p>
-        </div>
-        <div class="header-decoration">
-            <div class="decoration-circle"></div>
-            <div class="decoration-circle"></div>
-        </div>
-    </header>
-
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#characters" class="nav-link">Characters</a></li>
-            <li><a href="#music" class="nav-link">Music</a></li>
-            <li><a href="#pizza" class="nav-link">🍕 Pizza</a></li>
-            <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        </ul>
-    </nav>
-
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">Welcome to the Band!</h2>
-                <p class="hero-text">Follow Bocchi's journey as she overcomes her anxiety and rocks the stage!</p>
-                <button class="cta-button">Explore More</button>
-            </div>
-            <div class="hero-visual">
-                <div class="guitar-icon">🎸</div>
-            </div>
-        </section>
-
-        <!-- Characters Section -->
-        <section id="characters" class="characters-section">
-            <h2 class="section-title">Meet The Band</h2>
-            <div class="characters-grid">
-                <article class="character-card">
-                    <div class="character-image bocchi-bg">
-                        <span class="character-emoji">🎸</span>
-                    </div>
-                    <div class="character-info">
-                        <h3 class="character-name">Bocchi Gotoh</h3>
-                        <p class="character-role">Guitar • Lead Vocalist</p>
-                        <p class="character-desc">An extremely introverted guitarist who hides in bushes. Dreams of playing in a band!</p>
-                    </div>
-                </article>
-
-                <article class="character-card">
-                    <div class="character-image ryou-bg">
-                        <span class="character-emoji">🥁</span>
-                    </div>
-                    <div class="character-info">
-                        <h3 class="character-name">Ryou Yamada</h3>
-                        <p class="character-role">Drummer</p>
-                        <p class="character-desc">Cool and mysterious, but has the heart of a dreamer drummer.</p>
-                    </div>
-                </article>
-
-                <article class="character-card">
-                    <div class="character-image kita-bg">
-                        <span class="character-emoji">🎤</span>
-                    </div>
-                    <div class="character-info">
-                        <h3 class="character-name">Kita Ikuyo</h3>
-                        <p class="character-role">Vocalist • Keyboard</p>
-                        <p class="character-desc">Energetic and supportive, the glue that holds the band together.</p>
-                    </div>
-                </article>
-
-                <article class="character-card">
-                    <div class="character-image hitori-bg">
-                        <span class="character-emoji">🎵</span>
-                    </div>
-                    <div class="character-info">
-                        <h3 class="character-name">Hitori Gotoh</h3>
-                        <p class="character-role">Supporting Cast</p>
-                        <p class="character-desc">Bocchi's twin? Journey buddy with mysterious charm.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Music Section -->
-        <section id="music" class="music-section">
-            <h2 class="section-title">Playlist Vibes</h2>
-            <div class="music-container">
-                <article class="music-card">
-                    <div class="music-icon">🎵</div>
-                    <h3>Opening Theme</h3>
-                    <p>Perfectly crafted anime opening that sets the stage for Bocchi's adventure.</p>
-                    <div class="music-bar">
-                        <div class="music-progress"></div>
-                    </div>
-                </article>
-
-                <article class="music-card">
-                    <div class="music-icon">🎼</div>
-                    <h3>Band Performances</h3>
-                    <p>Live performances that showcase the band's growth and chemistry.</p>
-                    <div class="music-bar">
-                        <div class="music-progress"></div>
-                    </div>
-                </article>
-
-                <article class="music-card">
-                    <div class="music-icon">🎧</div>
-                    <h3>Character Themes</h3>
-                    <p>Unique musical themes for each character in the story.</p>
-                    <div class="music-bar">
-                        <div class="music-progress"></div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Pizza Guy Section -->
-        <section id="pizza" class="pizza-section">
-            <h2 class="section-title">🍕 Pizza Game Beta Crossover</h2>
-            <article class="pizza-feature">
-                <div class="pizza-content">
-                    <h3>The Legendary Pizza Guy</h3>
-                    <p>When Bocchi meets the iconic Pizza Guy from Pizza Game Beta, culinary chaos ensues! This unexpected crossover brings together music and mozzarella in the most wholesome way possible.</p>
-                    <div class="pizza-details">
-                        <span class="detail-tag">Comedy Gold</span>
-                        <span class="detail-tag">Unexpected Collab</span>
-                        <span class="detail-tag">Pure Entertainment</span>
-                    </div>
-                </div>
-                <div class="pizza-visual">
-                    <div class="pizza-slice">🍕</div>
-                    <div class="pizza-decorations">
-                        <div class="topping"></div>
-                        <div class="topping"></div>
-                        <div class="topping"></div>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Visual Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder one">🎸</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder two">🎤</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder three">🍕</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder four">🎵</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder five">🥁</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder six">✨</div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>About This Site</h4>
-                <p>A fan-made celebration of Bocchi The Rock! and Pizza Game Beta. Created with love and too much coffee.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#characters">Characters</a></li>
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <p>🎸 Rock on! 🍕 Stay cheesy!</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Bocchi & Pizza Fan Universe | Not affiliated with original creators</p>
-        </div>
-    </footer>
-</body>
-</html>
+<body class="bg-background text-on-surface-variant font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-surface-variant/30 transition-all duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1200px] mx-auto">
+<div class="cursor-pointer active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+<h1 class="text-headline-md font-headline-md text-primary tracking-tight">Kessoku Band</h1>
+<div class="cursor-pointer active:scale-95 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">search</span>
+</div>
+</div>
+</header>
+<!-- NavigationDrawer (Fixed Desktop Sidebar) -->
+<aside class="hidden lg:flex flex-col w-80 fixed left-0 top-0 h-screen z-40 bg-surface-container-low border-r border-surface-variant/20">
+<div class="p-8 flex flex-col gap-6 h-full">
+<div class="flex items-center gap-4 mb-8 pt-20">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary-container p-0.5 border-2 border-white shadow-sm">
+<img alt="Hitori Gotoh Profile" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg4-XNxWuO4kxkj6ip7ZaUFkeNiNN6zcsA00lyVy8BQUzHkz90jplN4F1oJ5brQLAXgpNWT79Xld-kXMNeBrvSQmrO2og-wfDE7NyszHa50s8U3_NDmmFEpTcWZIADR8vOdaNSXGlz8XYtlR4OISFeFbAZkuZ0WPA3yFp__YoN_zlUjOUOuVCamlSEio4B4rpQf0iMLUN2G-6ekdWuRfioWLcFfLfMOqXkecVoDnkfT21xIfyWxDYPrE9QdBDFajZYaA"/>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface font-semibold">Hitori Gotoh</p>
+<p class="text-[11px] font-label-sm text-on-surface-variant tracking-wider uppercase opacity-70">Guitar Hero</p>
+</div>
+</div>
+<nav class="flex flex-col gap-3">
+<a class="bg-primary-container text-on-primary-container font-semibold rounded-lg px-6 py-3 flex items-center gap-4 transition-all duration-200 soft-shadow" href="#about">
+<span class="material-symbols-outlined text-[20px]">info</span>
+<span class="text-label-sm">Show Info</span>
+</a>
+<a class="text-on-surface-variant hover:bg-white/50 rounded-lg px-6 py-3 flex items-center gap-4 transition-all duration-200" href="#characters">
+<span class="material-symbols-outlined text-[20px]">person_search</span>
+<span class="text-label-sm">Character Files</span>
+</a>
+<a class="text-on-surface-variant hover:bg-white/50 rounded-lg px-6 py-3 flex items-center gap-4 transition-all duration-200" href="#gallery">
+<span class="material-symbols-outlined text-[20px]">photo_library</span>
+<span class="text-label-sm">Moments</span>
+</a>
+<a class="text-on-surface-variant hover:bg-white/50 rounded-lg px-6 py-3 flex items-center gap-4 transition-all duration-200" href="#summary">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+<span class="text-label-sm">Episode Guide</span>
+</a>
+</nav>
+<div class="mt-auto pt-8 border-t border-surface-variant/20">
+<p class="text-[11px] text-on-surface-variant opacity-60">© 2024 Kessoku Band</p>
+</div>
+</div>
+</aside>
+<main class="lg:ml-80">
+<!-- Section 1: Intro -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-gradient-to-b from-primary-container/20 to-transparent" id="about">
+<div class="max-w-4xl mx-auto text-center">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] block mb-4">The Story of Hitori</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-8">What is Bocchi the Rock! about</h2>
+<div class="w-16 h-1 bg-primary/20 mx-auto mb-10 rounded-full"></div>
+<div class="mb-12 rounded-lg overflow-hidden soft-shadow max-w-2xl mx-auto border-8 border-white">
+<img alt="Kessoku Band Group Visual" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2uJJfnLQ_IcPcN7cUvXsqpXovZZcmyOPZnlK0ln8_KLGnRA6uGY3yKvF8FxHuCr1cq-UtSLLmN_L1cn738GejVgsQSRdaTrssrfujBAEAYFJx8LObfEPNiZhVS4KRRttevJorDlUbaKd2HdEV8eTkFG2QGIfD625eGl9jQLg0gJtof8MbW-iOGxqFtv8CjzGbUEap3ctuWhmNYG-IgNb83Yucyq0ch5Kc5hb-qpuOui5Bl5657RGUyzbkjQRy1J6ngA"/>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed max-w-2xl mx-auto px-4">
+                Hitori "Bocchi" Gotoh is a lonely high school girl who loves playing the guitar. She spends her days playing alone at home, hoping to one day join a band. Despite her incredible skills as "guitarhero" on the internet, her extreme social anxiety makes it impossible to make friends. Her life changes forever when she is invited to join Kessoku Band by the energetic drummer Nijika Ijichi.
+            </p>
+</div>
+</section>
+<!-- Section 2: Characters -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface" id="characters">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-on-surface">Bocchi the Rock! Characters</h2>
+<span class="font-label-sm text-label-sm text-primary/70 border-b border-primary/30 pb-1">Kessoku Band Members</span>
+</div>
+<!-- 4 Column Grid on Desktop -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Character Card: Hitori -->
+<article class="group bg-white rounded-lg p-4 border border-surface-variant/30 hover:border-primary/20 soft-shadow transition-all duration-300 transform hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6 bg-primary-container/20">
+<img alt="Hitori Gotoh Portrait" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlWNqxNlRWh74HqpAXI5v5GEx55GBssf1dTUyN-Vpsuw-55mus021ojUz2hYj962EzWGaXikl9zh9mik-FG_4qOQ1JiTo4KEAJKMsY69JRQvwtp8N3e43hEeL6JbCGULFRvQR7A1RJU2zxhW_DbBWGoNtxwNzbPwa_XSd0NWcQoiVEveo2V_QmVX8XMKE7G-yeRfUna4FFUC7iX841kwjVAylzxwCjuEkzeRac9grw6zyhq-FvnbcK2ae2NpUgQxvrKA"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Hitori Gotoh</h3>
+<p class="font-label-sm text-label-sm text-primary mb-4">Lead Guitar</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">The introverted genius who expresses herself through her Gibson Les Paul. Also known as "Bocchi".</p>
+</article>
+<!-- Character Card: Nijika -->
+<article class="group bg-white rounded-lg p-4 border border-surface-variant/30 hover:border-primary/20 soft-shadow transition-all duration-300 transform hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6 bg-secondary-container/20">
+<img alt="Nijika Ijichi Group Visual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcQr7AuQKRyaptpxPC9X-I3X1OIDCdrxZLSx5catC77K5OzwqYxY2h11KillRdttYDUQ3huKyyx8CF91I0QFyo8_SSpfDrrjDPjxR2lTkRD8Z0vHFdv843WnUDKGUOMtJSUSFq16Q5aPwUuVy_5luc4Fxdvzr7KNZgHTqZ1x0PcVRtOkxjxngZBbtEApLvtBGjAdAQ1DKW4WELjYOmZD7f3mQEndYuG1rY6gBYxeK-308vP7Z2gWJap9UEnNFwF3ST9Q"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Nijika Ijichi</h3>
+<p class="font-label-sm text-label-sm text-primary mb-4">Drums</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">The cheerful leader and drummer who founded Kessoku Band and the backbone of the group.</p>
+</article>
+<!-- Character Card: Ryo -->
+<article class="group bg-white rounded-lg p-4 border border-surface-variant/30 hover:border-primary/20 soft-shadow transition-all duration-300 transform hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6 bg-surface-container-high">
+<img alt="Ryo Yamada Group Visual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOkGn2io775SAUI5dSO8As4l00lgvRMTI0s5g7MT-olTivp8GoZbVnYmV9Zie_CQYdZS5MKAP1pfMRwz7XysxHeNkZpQMKnUKT977o8ApdCqIb6zuOorOntWN0KVLDGkCw-C_IcTVRmU4Du2HKl7d3RI2d_vBpo9TzRv5uDiVdQ-M0dvpDBVojS6yi9uG8pdJoKWy0fAd31TIzDIx-w6m7We3pJNjXi04RnIDGWvIR7Zlxc-VtWUZRsPF1fhrdn1mkUA"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Ryo Yamada</h3>
+<p class="font-label-sm text-label-sm text-primary mb-4">Bass</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">The eccentric bassist who loves music and spending money on gear. Often found eating weeds to save cash.</p>
+</article>
+<!-- Character Card: Kita -->
+<article class="group bg-white rounded-lg p-4 border border-surface-variant/30 hover:border-primary/20 soft-shadow transition-all duration-300 transform hover:-translate-y-1">
+<div class="aspect-[4/5] overflow-hidden rounded-lg mb-6 bg-error-container/20">
+<img alt="Ikuyo Kita Group Visual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp2nn8u36pMB387kDtiMT0S7lAiA-Q0r23OkY1Cmf04j5W1P-aIv0CD7WhdNW3f_zhL-v67CXPURXROWiMPutHm10TqTfMwYhwkU38tafzjjYj97IyZuHzbOrfiFHOhbt1T4Qf16ubOIh3rBmASNCP-sPlQvp0VmRtZFEuWsVLkJw_5Jn2C1uSK3QzxS4iE2hF2-18iSofAkvrPachuBtoPTb8cn9tIm_nAVoyjUrnt_rAC-mtBC4Vdeu3KzbSS1RHXQ"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Ikuyo Kita</h3>
+<p class="font-label-sm text-label-sm text-primary mb-4">Vocals &amp; Guitar</p>
+<p class="text-body-md font-body-md text-on-surface-variant text-sm">The social butterfly and vocalist who brings a bright aura to the band. A master of "Kita-aura".</p>
+</article>
+</div>
+</div>
+</section>
+<!-- New Section: Gallery / Moments -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-low/30" id="gallery">
+<div class="max-w-[1200px] mx-auto">
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-on-surface mb-12 text-center">Bocchi Moments</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<div class="sticker-shadow bg-white p-2 rounded transform -rotate-2 hover:rotate-0 transition-transform duration-300 border border-surface-variant/20">
+<img alt="Bocchi Expression" class="w-full h-40 object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg518HtpSIsGt3gnB_Sjoq_5Lbb-bp6e9IAT0RPYL1kbnwlJhxMH-mwZsI_-ncgWBkcz8OROw4fwtmOM2anNeeTRnpsmLdlxZbQL0XmqCgdHgE1d0jx6XSrxoj7m-i9h15gBxW3Xvpwq0I7aEVetL4KFezX-G4Itcbl1tIYtcvAtg3n2ahNzBn54nnkPCblC_hOY7ckCrWWTrn3z8_9-qnRxXmtDdxAXWGDmzr45sKGd6AHD-2cFRjLsEU5-fK7ZQ0OQ"/>
+</div>
+<div class="sticker-shadow bg-white p-2 rounded transform rotate-3 hover:rotate-0 transition-transform duration-300 border border-surface-variant/20">
+<img alt="Bocchi Playing" class="w-full h-40 object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_FKX3L8dspLw_EkuUA_J2VyPv--RUCe7z3RC-5vfUzIbWnRf8HpP-l3CGzbpxkckgmJJmNMukd9nX5e69F45pH04BBu971jfagRfLVYuOs-30jxX3dsxDi2sQuffwucaOf-D1iyi_xWuP__0EEYow4pRSKarwM_7QOjeeYtT9n29arPx0W6XNGkqfgw8Uc9t1VRAm9a0egGu8G7eMuuuIMW-AY10kgF4UVwGcGfDepej77RmuphZy1ieTSAXGcu5cqA"/>
+</div>
+<div class="sticker-shadow bg-white p-2 rounded transform -rotate-1 hover:rotate-0 transition-transform duration-300 border border-surface-variant/20">
+<img alt="Bocchi Recap" class="w-full h-40 object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq63iQKxReL3sISRyFXiOiMNchVtYpooDwE2TYdOH4wEJWZVh-MyNts9exdKyIvbK1KJxFQTCJ2U-sYxELQ-M5jgDgDBuF4Tc_zr_MnigLtwTURCBXmi-Hy56mWUKu8BRLV_vtGXsHzo5SxJAHj3Hb5EABhKJyqdFaECsItdadhzNsV0mwD6phYSBA2Ge1sr1H7bZuPrKWUd0DimYS8WWt4h8hg7zlONUyzAoEHUwtKziQmEYpN852loJxTAEB7YjmGg"/>
+</div>
+<div class="sticker-shadow bg-white p-2 rounded transform rotate-2 hover:rotate-0 transition-transform duration-300 border border-surface-variant/20">
+<img alt="Bocchi Chibi" class="w-full h-40 object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCewzl160ykLir7ArFmddxTX9Yq17Kl_AgDyNXVDvLFOxXXa7Imi3IhZvwv7g47mDhVswoNA1sht7mvHrwTz3UGda9Gl0ZpmHn6dRm9Hf8HsQRkpxnx9FSJRhQS3qU8L_oKRcm6T_zKfdntrAGrUFDJvl2ONdPpy-4WXKWDqcjoHUpZAIhYNMmQHTURyBWwO-kC8Uqr3WbAY0fmx55ZyPZIstnHqNf5y4LU21eOWIXSNkviyxsWoGFifTYwAPk73yjIig"/>
+</div>
+<div class="sticker-shadow bg-white p-2 rounded transform -rotate-3 hover:rotate-0 transition-transform duration-300 border border-surface-variant/20">
+<img alt="Bocchi Cool" class="w-full h-40 object-cover rounded-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHD7kxzYp1aPLHAFFiIqXMceDHqGdDpnmMdNFuZpSdOqmNrsDYZGb-n9GMBU4miQ01U0_KAygAkhHuUhkUPSx3yejCsjpD7T0_Ht4HOaEnC9-dHvaingVTYDw48kq3Ny5IivYWd7X4816EjsvLv5mEsE4zcbqcP3RdjHI-XEIbIS0uJVNRsqu61941ZMwbyv_S8C_JjLpRm3ORLNkBEuRjT22-9L2i7jBvDJ7yIiswI1WXNlQP5-7HqJoANB1LnBKFOA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Series Summary -->
+<section class="px-margin-mobile md:px-margin-desktop py-24 bg-surface overflow-hidden relative" id="summary">
+<div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+<div class="w-full lg:w-1/2 order-2 lg:order-1">
+<div class="soft-shadow bg-primary-container/30 text-on-surface-variant p-10 lg:p-14 -rotate-1 transform transition-transform hover:rotate-0 rounded-lg border-2 border-white">
+<h2 class="font-headline-lg-mobile md:text-headline-lg mb-6 text-on-surface">Series Summary</h2>
+<p class="font-body-lg text-body-lg opacity-90 leading-relaxed">
+                        The journey of Kessoku Band is more than just music; it's a comedic and heartfelt exploration of conquering personal hurdles. From the basement stage of STARRY to the chaotic heights of school festivals, Bocchi slowly finds her voice through her guitar strings, proving that even the most anxious person can shine under the right lights.
+                    </p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 order-1 lg:order-2 flex gap-6">
+<div class="flex-1 h-[450px] rounded-lg overflow-hidden soft-shadow transform rotate-2 z-10 border-8 border-white">
+<img alt="Bocchi Series Summary Visual" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJrhYSADsbN8Ts7WX4_zTdXhugRgiliI1HxidkbKcSzeZw5dvaz4ON-K4qwpMO30iNzsxyT8XDTo4tfihwmzRPlDVo9Jkyv03rcR7fAVYi0SkRkCh07CVO5ouQfF5dKs0onpXcjgG7ZO4JRlBxlAtY9DwQJaCLQ9pI8xHdRbrJT2eTGMGYvxXzKmsSo20gF3mWVSgKA3Ec81TW5IVgMoSTj5F5A_FIqdKE6XRcvJ84kSnhG24q9G58cd6dpYCMkg1Ksw"/>
+</div>
+<div class="flex-1 h-[450px] rounded-lg overflow-hidden soft-shadow transform -rotate-2 mt-12 border-8 border-white">
+<img alt="Bocchi Character Visual" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmVnnhip3yCwyvDIEHXQKH988JOMefqeq_tYrbqJ7LKMLyQfGlaZtoNv2K3fnWwKGomyI5OkxlYGGVZEiEM1G-Pqo8-Dp9L6XFlI9laMG2Om4wJ2T1PZlpSjE49V0PD_XYM-VWovw6in0BzQJSUtB5qUS9FZXZkiYZqyUu1UxDR_ff6ESacP0YoIy3ijlzpPaZIFw3YoiHcbJEFtYKUCfM5UuAs5mlJ-s_nedbtFf6D_KJn8pJHBwhOCsFAJrjlXak1w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-surface-container-high border-t border-primary/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop py-12 max-w-[1200px] mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-headline-md text-headline-md text-primary tracking-tight">Kessoku Band</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant/60 text-center md:text-left">© 2024 Kessoku Band Fan Portal. Keep Rocking.</p>
+</div>
+<nav class="flex gap-8">
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-all" href="#">Terms</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-all" href="#">Privacy</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-all" href="#">Lyrics</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant/70 hover:text-primary transition-all" href="#">Discography</a>
+</nav>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-md border-t border-surface-variant/20 soft-shadow lg:hidden">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-primary font-semibold px-3 py-1 transition-transform active:scale-90" href="#about">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-all active:scale-90" href="#characters">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[10px] uppercase tracking-wider">Cast</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant/60 hover:text-primary transition-all active:scale-90" href="#gallery">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-[10px] uppercase tracking-wider">Moments</span>
+</a>
+</div>
+</nav>
+</body></html>
